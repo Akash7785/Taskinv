@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"></link>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <nav class="sidebar hoverable close ">
+      <div class="logo_items flex">
+        <span class="nav_image">
+          <i class='bx bx-menu bx-md'></i>
+        </span>
+        <span class="logo_name">KPC</span>
+        <i class='bx bxs-user-circle bx-md' id="lock-icon"></i>
+        <i class="bx bx-x" id="sidebar-close"></i>
+        <i class='bx bx-x bx-md ' id="lock-icon"></i>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_items">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Dashboard</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-pie-chart-alt-2'></i>
+                <span>Main</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-search-alt-2'></i>
+                <span>Search</span>
+              </a>
+            </li>
+          </ul>
+<div class="navlink">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Pages</span>
+              <span class="line"></span>
+            </div>
+            <div id="student" class="hasSubMenu">
+
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class='bx bx-user-pin'></i>
+                  <span>Student</span>
+                  <i class='bx bx-down-arrow-alt' ></i>
+
+                </a>
+              </li>
+              <ul id="student" class="sub-menu">
+                <li><a href="#">Student</a></li>
+                <li><a href="#">Employee</a></li>
+                <li><a href="#">Certificates</a></li>
+                <li><a href="#">School</a></li>
+
+
+              </ul>
+            </div>
+            <div id="employee" class="hasSubMenu">
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-group'></i>
+                <span>Employee</span>
+              </a>
+            </li>
+            <ul class="sub-menu">
+              <li><a href="#">Student</a></li>
+              <li><a href="#">Employee</a></li>
+              <li><a  href="#">Certificates</a></li>
+              <li><a href="#">School</a></li>
+
+
+            </ul>
+            </div>
+            <div id="reports" class="hasSubMenu">
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-book'></i>
+                <span>Reports</span>
+              </a>
+            </li>
+            <ul class="sub-menu">
+              <li><a href="#">Student</a></li>
+              <li><a href="#">Employee</a></li>
+              <li><a href="#">Certificates</a></li>
+              <li><a href="#">School</a></li>
+            </ul>
+</div>
+          </ul>
+        </div>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-credit-card-front'></i>
+                <span>Certificate</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-group' ></i>
+                <span>Account</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-cog'></i>
+                <span>Setting</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar -->
+    
+    <div>
+      <div class="hamburger">
+      
+        <h5>Dashboards</h5>
+      </div>
+      <hr />
+      <h4>Available Records</h4>
+      <div class="AvailableRecordContainer">
+          <div class="AvailableRecordBox">
+              <h5>Total Students</h5>
+              <h3>250</h3>
+            </div>
+            <div class="AvailableRecordBox">
+                <h5>Total Students</h5>
+                <h3>250</h3>
+              </div>
+              <div class="AvailableRecordBox">
+                <h5>Total Students</h5>
+                <h3>250</h3>
+              </div>
+              <div class="AvailableRecordBox">
+                <h5>Total Students</h5>
+                <h3>250</h3>
+              </div>
+        </div>
+        <h4>Quick Search</h4>
+        <div class="QuickSearchContainer">
+            <h5>Search Sutdent</h5>
+            <div class="inputFieldContainer">
+                <input class="inputField" type="text" name="" id=""placeholder="Search By Student Name"/>
+                <input class="inputField" type="text" name="" id="" placeholder="Select Class">
+                <input class="inputField" type="text" name="" id="" placeholder="Search By Roll Number">
+                <button>Search</button>
+            </div>
+            <div class="QuickSearch-Heading">
+                <p>Name</p>
+                <h5>Class</h5>
+                <h5>Fathers Name</h5>
+                <h5>Roll No.</h5>
+                <h5>Class Teacher</h5>
+            </div>
+            <div class="Search-value">
+                <p>Rahul Kumar</p>
+                <p>7A</p>
+                <p>Hello World</p>
+                <p>123456</p>
+                <p>Teacher Name</p>
+                <p>i</p>
+            </div>
+            <hr class="Search-value-hr"/>
+            <hr class="Search-value-hr"/>
+            <hr class="Search-value-hr"/>
+            <hr class="Search-value-hr"/>
+            <div class="">
+                <h5>Recent Fee Update</h5>
+                <input class="inputField" placeholder="Search By Search Name"/>
+            </div>
+            <div class="QuickSearch-Heading">
+                <h5>Name</h5>
+                <h5>Class</h5>
+                <h5>Fathers Name</h5>
+                <h5>Roll No.</h5>
+                <h5>Class Teacher</h5>
+            </div>
+            <div class="Search-value">
+                <p>Rahul Kumar</p>
+                <p>7A</p>
+                <p>Hello World</p>
+                <p>123456</p>
+                <p>Teacher Name</p>
+                <p>i</p>
+            </div>
+            <p>S/o Mr Ramesh Kumar</p>
+
+            <hr class="Search-value-hr"/>
+            <hr class="Search-value-hr"/>
+            <hr class="Search-value-hr"/>
+            <hr class="Search-value-hr"/>
+
+        </div>
+
+    </div>
+  </body>
+  <script src="/index.js"></script>
+</html>

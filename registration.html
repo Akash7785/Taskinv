@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="./index.css" />
+  
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <nav class="sidebar hoverable close ">
+      <div class="logo_items flex">
+        <span class="nav_image">
+          <i class='bx bx-menu bx-md'></i>
+        </span>
+        <span class="logo_name">KPC</span>
+        <i class='bx bxs-user-circle bx-md' id="lock-icon"></i>
+        <i class="bx bx-x" id="sidebar-close"></i>
+        <i class='bx bx-x bx-md ' id="lock-icon"></i>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_items">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Dashboard</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-pie-chart-alt-2'></i>
+                <span>Main</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-search-alt-2'></i>
+                <span>Search</span>
+              </a>
+            </li>
+          </ul>
+        <div class="navlink">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Pages</span>
+              <span class="line"></span>
+            </div>
+            <div id="student" class="hasSubMenu">
+
+              <li class="item">
+                <a href="#" class="link flex">
+                  <i class='bx bx-user-pin'></i>
+                  <span>Student</span>
+                  <i class='bx bx-down-arrow-alt' ></i>
+                </a>
+              </li>
+              <ul id="student" class="sub-menu">
+                <li><a href="#">Student</a></li>
+                <li><a href="#">Employee</a></li>
+                <li><a href="#">Certificates</a></li>
+                <li><a href="#">School</a></li>
+              </ul>
+            </div>
+            <div id="employee" class="hasSubMenu">
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-group'></i>
+                <span>Employee</span>
+              </a>
+            </li>
+            <ul class="sub-menu">
+              <li><a href="#">Student</a></li>
+              <li><a href="#">Employee</a></li>
+              <li><a  href="#">Certificates</a></li>
+              <li><a href="#">School</a></li>
+
+
+            </ul>
+            </div>
+            <div id="reports" class="hasSubMenu">
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-book'></i>
+                <span>Reports</span>
+              </a>
+            </li>
+            <ul class="sub-menu">
+              <li><a href="#">Student</a></li>
+              <li><a href="#">Employee</a></li>
+              <li><a href="#">Certificates</a></li>
+              <li><a href="#">School</a></li>
+            </ul>
+</div>
+          </ul>
+        </div>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-credit-card-front'></i>
+                <span>Certificate</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-group' ></i>
+                <span>Account</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class='bx bx-cog'></i>
+                <span>Setting</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Form starts -->
+
+    <div class="container">
+      <form  action="./submit.html" id="registrationData">
+        <h4>Setup/Students</h4>
+        <hr />
+        <h3>Student Admission Form</h3>
+        <div class="RegistrationContainer">
+          <div class="QuickSearchBox">
+            <p class="info-heading">Please Select Branch</p>
+            <select class="inputInfo" name="" id="">
+              <option value="Lucknow">Lucknow</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Pune">Pune</option>
+              <option value="Mumbai">Mumbai</option>
+            </select>
+          </div>
+          <div class="QuickSearchBox">
+            <p class="info-heading">Registraion Number*</p>
+            <input type="text" class="inputInfo" required id="regNo"/>
+          </div>
+          <div class="QuickSearchBox">
+            <p class="info-heading">S.No.*</p>
+            <input type="text" class="inputInfo" id="sno"/>
+          </div>
+          <div class="QuickSearchBox">
+            <p class="info-heading">Photo of the Student</p>
+            <label class="custom-file-upload">
+              <input type="file"/>
+              Upload PNG/JPG
+          </label>
+          </div>
+        </div>
+      <h1 class="info-heading">Student Information</h1>
+      <div class="RegistrationContainerr">
+        <div class="QuickSearchBox">
+          <p class="info-heading">First Name</p>
+          <input type="text" class="inputInfo" id="firstName"/>
+        </div>
+        <div class="QuickSearchBox">
+          <p class="info-heading">Last Name</p>
+          <input type="text" class="inputInfo" />
+        </div>
+        <div class="QuickSearchBox">
+          <p class="info-heading">Date of Birth</p>
+          <input type="text" class="inputInfo" />
+        </div>
+        <div class="QuickSearchBox">
+          <p class="info-heading">Place of Birth</p>
+          <input type="text" class="inputInfo" />
+        </div>
+        <div class="QuickSearchBox">
+          <p class="info-heading">Gender</p>
+          <input type="text" class="inputInfo" />
+        </div>
+        <div class="QuickSearchBox">
+          <p class="info-heading">Caste</p>
+          <input type="text" class="inputInfo" />
+        </div>
+        <div class="QuickSearchBox">
+          <p class="info-heading">Category</p>
+          <input type="text" class="inputInfo" />
+        </div>
+        <div class="QuickSearchBox">
+          <p class="info-heading">Blood Group</p>
+          <input type="text" class="inputInfo" />
+        </div>
+        <div class="QuickSearchBox">
+          <p class="info-heading">Height</p>
+          <input type="text" class="inputInfo" />
+        </div>
+        <div class="QuickSearchBox">
+          <p class="info-heading">Weight</p>
+          <input type="text" class="inputInfo" />
+        </div>
+      </div>
+
+      <div class="RegistrationContainerBlank">
+        <p class="info-heading-blank">parents Information</p>
+      </div>
+
+      <div class="RegistrationContainerBlank" id="blank-info">
+        <div>
+          <p class="info-heading-blank">Previous School Information</p>
+        </div>
+        <div class="prev-school-info">
+          <p>Whether Transfer Certification Submitted ?</p>
+            <div class="radioInput">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <label>Yes</label>
+            </div>
+            <div class="radioInput">
+              <input
+                value="yes"
+                type="radio"
+                name="transcferCertificate"
+                id=""
+              />
+              <label>No</label>
+            </div>
+            <label class="custom-file-upload">
+              <input type="file"/>
+              Upload PDF
+          </label>
+          </div>
+        </div>
+        <div class="RegistrationContainerBlank" id="blank-info">
+          
+          <div class="prev-school-info">
+            <p>Is there any fee exception ? </p>
+              <div class="radioInput">
+                <input type="radio" id="html" name="fav_language" value="HTML" />
+                <label>Yes</label>
+              </div>
+              <div class="radioInput">
+                <input
+                  value="yes"
+                  type="radio"
+                  name="transcferCertificate"
+                  id=""
+                />
+                <label>No</label>
+              </div>
+            </div>
+            <div>
+              <p class="info-heading-blank">Fee structure will be added</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <input onclick=dataSubmitted class="submitBtn" type="submit" value="submit">
+  </form>
+    
+  </body>
+  <script src="/index.js"></script>
+</html>
